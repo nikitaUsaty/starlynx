@@ -1,0 +1,99 @@
+.wrapper {
+  position: absolute;
+  padding-left: 50px;
+  display: flex;
+  .icon-wrap {
+    width: 95vw;
+    display: flex;
+    justify-content: flex-end;
+
+    .some-icon {
+      width: 80vw;
+      height: 80vh;
+      align-self: flex-end;
+      background-color: #000;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-position: right;
+      mask-position: right;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      mask-image: url("../../assets/STARLYNX-4.svg");
+      animation: svg 10s infinite;
+    }
+  }
+
+  .menu {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: "ttfont";
+
+    ul {
+      list-style: none;
+
+      li {
+        width: 50vw;
+        padding: 30px 0;
+        padding-right: 25px;
+        margin-left: -25px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .list1 {
+        background-image: url(../../assets/shapes/book.png);
+      }
+      .list2 {
+        background-image: url(../../assets/shapes/portfolio.png);
+      }
+      .list3 {
+        background-image: url(../../assets/shapes/flash.png);
+      }
+      .list4 {
+        background-image: url(../../assets/shapes/shop.png);
+      }
+    }
+  }
+}
+
+.wrapper.is-phone-portrait {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  .icon-wrap {
+    width: 90vw;
+    .some-icon {
+      height: 20vh;
+    }
+  }
+
+  .menu {
+    position: sticky;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+
+    ul {
+      li {
+        width: 50vw;
+        padding: 35px 0;
+        padding-right: 25px;
+        margin-left: -60px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

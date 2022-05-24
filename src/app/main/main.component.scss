@@ -1,0 +1,79 @@
+.yo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  -webkit-animation: colorchange 20s infinite;
+  animation: colorchange 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+
+  .about {
+    margin: 0 250px 100px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    font-size: 20px;
+    // text-align: right;
+    margin-top: calc(50vh + 200px);
+  }
+}
+.upcoming {
+  padding: 20px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 25px;
+  background-color: #faf9f6;
+
+  p {
+    margin: 5px;
+  }
+}
+
+.yo.is-phone-portrait {
+  width: 100vw;
+  height: 100%;
+
+  .some-icon {
+    height: 100%;
+    // margin-top: -300px;
+    align-self: center;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+
+  .about {
+    margin-bottom: 50px;
+    margin-left: 45px;
+  }
+}
+
+.upcoming.is-phone-portrait {
+  padding: 20px 20px;
+}
+
+@keyframes colorchange {
+  0% {
+    background-color: #3e5dd2;
+  }
+  50% {
+    background-color: #489363;
+  }
+  100% {
+    background-color: #6667ab;
+  }
+}
+
+@keyframes svg {
+  0% {
+    background-color: #000;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
